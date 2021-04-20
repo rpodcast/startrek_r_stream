@@ -27,6 +27,9 @@ RUN apt-get update \
 # install R packages needed for VSCode interaction and package management
 RUN install2.r languageserver renv remotes
 
+# install additional R packages for this particular analysis
+RUN install2.r tidyverse shiny plotly rtrek lcars trekcolors trekfont
+
 # install radian via python and pip3
 RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \
