@@ -36,6 +36,9 @@ RUN apt-get update \
 RUN install2.r languageserver renv remotes
 RUN installGithub.r nx10/httpgd
 
+# install additional R packages for this particular analysis
+RUN install2.r tidyverse shiny plotly rtrek lcars trekcolors trekfont
+
 # install radian via python and pip3
 RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \
