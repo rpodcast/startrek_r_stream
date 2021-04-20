@@ -1,10 +1,8 @@
-# R Projects Development Setup
+# Introduction
 
-This repo contains the various configurations, container settings, and other setup files that I will use in my new development setup for R projects on linux. Typically I would install R directly in my system along with the various IDEs and other tools that integrate with R.  Now that I have systems with larger amounts of memory and faster CPUs, I am now experimenting with a development environment based on __container technology__, in particular Docker contaners. I have the following goals for my new development setup:
+This repository contains R scripts and the development configuration used for exploring Star Trek data with R!
 
-* Ability to use RStudio, Visual Studio Code, or other IDEs that can reference Docker containers or be fully contained inside one.
-* Share a _central_ R  package cache between containers using the [`{renv}`](https://rstudio.github.io/renv/) package management system.
-* Leave no traces of the R installation or system dependencies on the host system. While that sounds a little brazen, I plan on using a custom Linux PC built for media production and I want to keep that system fairly clean and lean!
+# Development Setup
 
 ## Pre-requisites
 
